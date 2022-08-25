@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style5.css">
+    <link rel="icon" href="/images/fevicon.png">
+    <title>HTML Practice</title>
+</head>
+<body>
+    <nav>
+        <a href="/html/">HTML</a>           |
+        <a href="/css/">CSS</a>             |
+        <a href="/images/">Images</a>       |
+    </nav>
+
+    <!--HTML Forms--> <br>
+    <form action="" style="padding-top: 50px; padding-left: 100px;">
+        <label for="fname">First name:</label> <br>
+        <input type="text" name="fname" id="fname" value="John"> <br>
+        <label for="lname">Last name:</label> <br> 
+        <input type="text" id="lname" name="lname" value="Doe">
+    </form>
+    
+    <br><br><br><br><br>
+    <h2>Radio Buttons</h2>
+    <p>Choose your favorite Web language:</p>
+    <form action="">
+        <input type="radio" name="fav_language" id="html" value="HTML">
+        <label for="html">HTML</label> <br>
+        <input type="radio" name="fav_language" id="html">
+        <label for="html">CSS</label> <br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        <br> <br>
+        <input type="submit" value="submit">
+
+    </form>
+
+    <h2>The select Element</h2>
+
+    <p>The select element defines a drop-down list:</p>
+    <br><br><br>
+    <form action="">
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <input type="submit">
+    </form>
+    <!--Allow Multiple Selections-->
+    <br><br><br><br><br>
+    <form action=""> 
+    <label for="cars">Choose one/one more car:</label>
+    <select name="cars" id="cars" size="4" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+    </form>
+
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+    <h2>Grouping Form Data with Fieldset</h2>
+
+    <p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
+
+    <form action="">
+        <fieldset> 
+        <legend>Personalia:</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" value="John"> <br>
+        <label for="lname">Last name:</label> <br>
+        <input type="lname" name="lname" id="lname" value="Doe"> <br>
+        <br>
+        <input type="Submit" name="submit" id="">
+    </fieldset>
+    </form>
+
+    <form>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+      </form>
+      <form>
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+      </form>
+      <form>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email">
+      </form>
+
+      <h1>File upload</h1>
+      <p>Show a file-select field which allows a file to be chosen for upload:</p>
+      <form action="">
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile"> <br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+
+    
+</body>
+</html>
